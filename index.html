@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5サンプル</title>
+</head>
+
+<body>
+    <script>
+        function clickBtn3() {
+            const eSelectKyouka = document.getElementById("selectKyouka");
+            const linkTarget = eSelectKyouka.value;
+            alert(linkTarget + "に遷移します。");
+            location.href = linkTarget;
+        }
+    </script>
+    <select id="selectKyouka">
+        <option value="./transition_1.html">その１</option>
+        <option value="./transition_2.html">その２</option>
+    </select>
+    <br />
+    <input type="button" id="btnKyouka" value="ボタン3" onclick="clickBtn3()" /><br />
+</body>
+
+</html>
